@@ -1,0 +1,115 @@
+/* Main style adjustments */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+/* Navbar */
+.navbar {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+  font-weight: 700;
+}
+.navbar-nav .nav-link {
+  color: #333;
+  transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/img.jpg") center center/cover no-repeat;
+  color: #fff;
+  padding: 100px 0;
+}
+.hero h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* About Section */
+#about img {
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+#about img:hover {
+  transform: scale(1.05);
+}
+
+/* Services Section */
+.services .col-md-4 {
+  margin-top: 20px;
+  padding: 20px;
+}
+.services h3 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.services p {
+  font-size: 0.9rem;
+}
+
+/* Contact Section */
+/* Google Maps Embed */
+.map-container {
+  max-width: 600px;
+  margin: 0 auto; /* Center align */
+}
+
+/* Contact Details - Two-column Layout */
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-details .col-md-6 {
+  padding: 10px;
+}
+
+/* Social Media Icons */
+.social-media img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+.social-media img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-details {
+    flex-direction: column;
+  }
+  .contact-details .col-md-6 {
+    text-align: center;
+  }
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
